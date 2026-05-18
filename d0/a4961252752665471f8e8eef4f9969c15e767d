@@ -1,0 +1,16 @@
+index.html
+  h_0a88d9aba8622a 1-107
+.gitignore
+  h_0a88d9aba8622a 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.9",
+  "base_commit_sha": "d0a4961252752665471f8e8eef4f9969c15e767d",
+  "prompts": {},
+  "humans": {
+    "h_0a88d9aba8622a": {
+      "author": "Yoan Thirion <yoan.thirion@gmail.com>"
+    }
+  }
+}
