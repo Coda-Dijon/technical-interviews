@@ -1,7 +1,7 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
-  background: #090231;
+  background: #e8e6f0;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -10,20 +10,27 @@ body {
 }
 
 .window {
-  background: #1e1a2e;
+  background: #ffffff;
   border-radius: 12px;
   padding: 0;
-  width: 520px;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+  width: 540px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.15), 0 2px 8px rgba(0,0,0,0.08);
   overflow: hidden;
 }
 
 .titlebar {
-  background: #2a2540;
+  background: #ececec;
   padding: 12px 16px;
   display: flex;
   align-items: center;
+  position: relative;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.dots {
+  display: flex;
   gap: 8px;
+  z-index: 1;
 }
 
 .dot { width: 12px; height: 12px; border-radius: 50%; }
@@ -32,10 +39,14 @@ body {
 .dot.green  { background: #28c940; }
 
 .title {
-  color: #aaa;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #555;
   font-size: 13px;
-  margin: 0 auto;
   font-family: -apple-system, sans-serif;
+  font-weight: 500;
+  white-space: nowrap;
 }
 
 .code {
@@ -44,23 +55,32 @@ body {
   line-height: 2;
 }
 
-.ln { color: #555; user-select: none; margin-right: 16px; }
+.code > div { white-space: pre; }
 
-.kw   { color: #c792ea; }
-.typ  { color: #82aaff; }
-.num  { color: #f78c6c; }
-.op   { color: #89ddff; }
-.var  { color: #eeffff; }
-.cmt  { color: #546e7a; font-style: italic; }
+.ln { color: #bbb; user-select: none; margin-right: 20px; }
 
-.hidden-eq { color: #1e1a2e; }
+.kw   { color: #7c3aed; font-weight: 600; }
+.typ  { color: #2563eb; }
+.num  { color: #ea580c; }
+.op   { color: #0891b2; }
+.var  { color: #1a1a2e; }
+.cmt  { color: #9ca3af; font-style: italic; }
+
+.hidden-eq { color: #ffffff; }
 
 .question {
-  margin-top: 8px;
-  padding: 16px 28px 24px;
-  color: #aaa;
+  padding: 16px 28px 20px;
+  color: #555;
   font-family: -apple-system, sans-serif;
   font-size: 14px;
-  border-top: 1px solid #2a2540;
+  border-top: 1px solid #ececec;
+  background: #fafafa;
 }
-.question strong { color: #eeffff; }
+.question strong { color: #1a1a2e; }
+.question code {
+  background: #f0f0f0;
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+  font-size: 13px;
+}
