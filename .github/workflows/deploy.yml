@@ -26,16 +26,18 @@ jobs:
         with:
           node-version: 22
 
-      - name: Minify JS and CSS
+      - name: Build dist
         run: |
-          npx --yes esbuild render.js --minify --outfile=render.js
-          npx --yes esbuild styles.css --minify --outfile=styles.css
+          mkdir dist
+          cp index.html dist/index.html
+          npx --yes esbuild render.js --minify --outfile=dist/render.js
+          npx --yes esbuild styles.css --minify --outfile=dist/styles.css
 
       - uses: actions/configure-pages@v5
 
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: dist
 
       - uses: actions/deploy-pages@v4
         id: deployment
