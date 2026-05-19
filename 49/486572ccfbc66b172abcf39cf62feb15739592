@@ -1,0 +1,27 @@
+render.js
+  s_17cfb61b09e28b::t_3842d4c53a1932 41
+index.html
+  s_17cfb61b09e28b::t_1d6e57e77ca125 20-22
+  s_17cfb61b09e28b::t_63925be753945d 42
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.9",
+  "base_commit_sha": "49486572ccfbc66b172abcf39cf62feb15739592",
+  "prompts": {},
+  "humans": {
+    "h_0a88d9aba8622a": {
+      "author": "Yoan Thirion <yoan.thirion@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_17cfb61b09e28b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "9e469317-e3c2-46a7-b5e6-fa7fff02a3c6",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "Yoan Thirion <yoan.thirion@gmail.com>"
+    }
+  }
+}
