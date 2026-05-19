@@ -38,9 +38,8 @@
   }
 
   function render() {
-    const { title, question, code } = SNIPPET;
+    const { title, code } = SNIPPET;
     document.querySelector('.title').textContent = title;
-    document.querySelector('.question').innerHTML = question;
     const lines = code.trim().split('\n');
     document.querySelector('.code').innerHTML = lines.map(renderLine).join('');
   }
