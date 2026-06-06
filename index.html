@@ -2,43 +2,52 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="styles.css">
-  <title>Coda - Test technique</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="home.css">
+  <title>Entretien technique — École Coda</title>
 </head>
 <body>
 
-<div class="window">
-  <div class="titlebar">
-    <div class="dots">
-      <div class="dot red"></div>
-      <div class="dot yellow"></div>
-      <div class="dot green"></div>
-    </div>
-    <span class="title"></span>
-  </div>
-  <div class="code"></div>
-  <div class="question">
-    <iframe data-tally-src="https://tally.so/embed/7RaeQ9?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="174" frameborder="0" marginheight="0" marginwidth="0" title="Test technique - B1"></iframe>
+<div class="container">
+  <header>
+    <div class="logo">Coda</div>
+    <h1>Entretien d'admission</h1>
+    <p class="subtitle">
+      Bienvenue ! Pour intégrer l'école Coda, vous allez passer
+      <strong>3 tests techniques</strong>. Chaque test évalue votre capacité
+      à lire et comprendre du code.
+    </p>
+  </header>
+
+  <div class="tests">
+    <a href="test1/" class="test-card">
+      <div class="test-number">01</div>
+      <div class="test-info">
+        <h2>Algorithme Java</h2>
+        <p>Analyser un algorithme et déterminer la valeur finale d'une variable</p>
+      </div>
+      <span class="test-arrow">→</span>
+    </a>
+
+    <a href="test2/" class="test-card">
+      <div class="test-number">02</div>
+      <div class="test-info">
+        <h2>JavaScript pipeline</h2>
+        <p>Lire une fonction et prédire la valeur retournée</p>
+      </div>
+      <span class="test-arrow">→</span>
+    </a>
+
+    <a href="test3/" class="test-card">
+      <div class="test-number">03</div>
+      <div class="test-info">
+        <h2>Console.log</h2>
+        <p>Déduire la sortie console</p>
+      </div>
+      <span class="test-arrow">→</span>
+    </a>
   </div>
 </div>
 
-<script>
-const SNIPPET = {
-  title: "algo.java",
-  code: `\
-int result = 0;
-int v = 5;
-int[] numbers = { 3, 5, 2, 5, 9 };
-for ( int x  :  numbers) {
-    if ( x >~~=~~ v ) {
-        result = result - x;
-    } else {
-        result = result + x;
-    }
-}`
-};
-</script>
-<script src="render.js"></script>
-<script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
 </body>
 </html>
