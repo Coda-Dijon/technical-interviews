@@ -28,10 +28,14 @@ jobs:
 
       - name: Build dist
         run: |
-          mkdir dist
+          mkdir -p dist/test1 dist/test2 dist/test3
           cp index.html dist/index.html
           npx --yes esbuild render.js --minify --outfile=dist/render.js
           npx --yes esbuild styles.css --minify --outfile=dist/styles.css
+          npx --yes esbuild home.css --minify --outfile=dist/home.css
+          cp test1/index.html dist/test1/index.html
+          cp test2/index.html dist/test2/index.html
+          cp test3/index.html dist/test3/index.html
 
       - uses: actions/configure-pages@v5
 
