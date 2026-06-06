@@ -1,0 +1,42 @@
+test1/index.html
+  s_796935547ed760::t_0d7229bd519307 1-47
+index.html
+  h_0a88d9aba8622a 16-17,27,35-36,44-45
+  s_796935547ed760::t_0649fd8396ba82 5-7,11-15,18-26,28-34,37-43,46-48
+home.css
+  s_796935547ed760::t_d2962207183ce2 1-122
+render.js
+  s_796935547ed760::t_e5850c52960821 2-21,23-25,30-36,42-53,58-64,71-77
+  h_0a88d9aba8622a 27-29,39-40,54-55,66-67
+styles.css
+  s_796935547ed760::t_d41b3d6fa74ab9 4,16,20-21,23,26,30,32,36,41,59,70,75,77-81,83,87,90-91,93,95-96
+  s_796935547ed760::t_e780bfc9ff747d 102-104
+  s_796935547ed760::t_98408804c8cf2e 12-15,17-19,22,24
+test2/index.html
+  h_0a88d9aba8622a 23-24,30,33-35
+  s_796935547ed760::t_ab3d45a9114857 1-22,25-29,31-32,36-40
+test3/index.html
+  h_0a88d9aba8622a 23-24,30-31,33-36
+  s_796935547ed760::t_80185f8c71cca7 1-22,25-29,32,37-41
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.3",
+  "base_commit_sha": "22fa02f3a00a75af365b3be2019d660822b76466",
+  "prompts": {},
+  "humans": {
+    "h_0a88d9aba8622a": {
+      "author": "Yoan Thirion <yoan.thirion@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_796935547ed760": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "31dd704d-094e-428c-81d1-b2e1607626c8",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "Yoan Thirion <yoan.thirion@gmail.com>"
+    }
+  }
+}
