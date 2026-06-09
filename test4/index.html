@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../styles.css">
+  <title>Coda — Test 4 : Récursion Java</title>
+</head>
+<body>
+
+<a href="../" class="back-link">← Accueil</a>
+
+<div class="window">
+  <div class="titlebar">
+    <div class="dots">
+      <div class="dot red"></div>
+      <div class="dot yellow"></div>
+      <div class="dot green"></div>
+    </div>
+    <span class="title"></span>
+  </div>
+  <div class="code"></div>
+  <div class="question">
+    <!-- Remplacer par l'iframe Tally une fois le formulaire créé -->
+    <p><strong>Quelle valeur est affichée par ce programme ?</strong></p>
+  </div>
+</div>
+
+<script>
+const SNIPPET = {
+  title: "Mystery.java",
+  lang: "java",
+  code: `\
+static int f(int n) {
+    if (n == 0) return 1;
+    return n * f(n - 1);
+}
+
+static int g(int n) {
+    if (n == 0) return 0;
+    return g(n - 1) + f(n);
+}
+
+System.out.println(g(4));`
+};
+</script>
+<script src="../render.js"></script>
+</body>
+</html>
