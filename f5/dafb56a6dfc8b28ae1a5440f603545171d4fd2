@@ -1,0 +1,33 @@
+index.html
+  s_796935547ed760::t_87668fdfbd546c 17
+  h_0a88d9aba8622a 54
+  s_796935547ed760::t_55831a95752efb 49-53,55-57
+.github/workflows/deploy.yml
+  s_796935547ed760::t_2b0d4a2b533228 31
+  s_796935547ed760::t_08c44b8b1df0e4 39
+test4/index.html
+  s_796935547ed760::t_36d83c4bf48459 33-34,38-43
+  s_796935547ed760::t_939416a5661ab9 35
+  s_796935547ed760::t_3cbec07552f4ac 1-32,36-37,44-48
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "f5dafb56a6dfc8b28ae1a5440f603545171d4fd2",
+  "prompts": {},
+  "humans": {
+    "h_0a88d9aba8622a": {
+      "author": "Yoan Thirion <yoan.thirion@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_796935547ed760": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "31dd704d-094e-428c-81d1-b2e1607626c8",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "Yoan Thirion <yoan.thirion@gmail.com>"
+    }
+  }
+}
