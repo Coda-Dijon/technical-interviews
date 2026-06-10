@@ -78,7 +78,7 @@ body {
 .num  { color: #dd23bb; }
 .op   { color: #9788c3; }
 .var  { color: #ffffff; }
-.cmt  { color: #342068; font-style: italic; }
+.cmt  { color: #ffffff; font-style: italic; }
 
 .hidden-eq { color: #0f0540; }
 

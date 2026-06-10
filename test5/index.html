@@ -37,10 +37,12 @@ const SNIPPET = {
 -- | Dave  |   2900 | RH   |
 -- | Eve   |   4800 | IT   |
 
-SELECT COUNT(*)
+SELECT name
 FROM employees
-WHERE dept = 'IT'
-  ~~AND~~ salary > 4000;`
+WHERE salary > (
+    SELECT AVG(salary)
+    FROM employees
+);`
 };
 </script>
 <script src="../render.js"></script>
