@@ -1,0 +1,38 @@
+styles.css
+  s_796935547ed760::t_b426823260a0ec 75
+test6/index.html
+  h_0a88d9aba8622a 23-24
+  s_796935547ed760::t_4c63c8da7ca1b2 1-5,7-22,25-29,31-32,36-37,40,43-47
+  s_796935547ed760::t_ac7257016c4ec9 6
+  s_796935547ed760::t_5b01e9e6de4360 30,33-35,38-39,41-42
+test5/index.html
+  h_0a88d9aba8622a 23-24
+index.html
+  s_796935547ed760::t_d944dd4b4ef6a3 17
+  s_796935547ed760::t_bfe2d008e7065a 67-70,73-75
+  s_796935547ed760::t_1f4252ccc83a9c 71-72
+.github/workflows/deploy.yml
+  s_796935547ed760::t_8b9cb3ce9c5d89 31
+  s_796935547ed760::t_cc1110be945007 41
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "834b7719cd5f4a731347a26971c98e2b754f3479",
+  "prompts": {},
+  "humans": {
+    "h_0a88d9aba8622a": {
+      "author": "Yoan Thirion <yoan.thirion@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_796935547ed760": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "31dd704d-094e-428c-81d1-b2e1607626c8",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "Yoan Thirion <yoan.thirion@gmail.com>"
+    }
+  }
+}
