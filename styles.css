@@ -72,7 +72,7 @@ body {
 
 .code > div { white-space: pre; }
 
-.ln { color: #342068; user-select: none; margin-right: 20px; }
+.ln { color: #ffffff; user-select: none; display: inline-block; min-width: 2ch; text-align: right; margin-right: 20px; }
 
 .kw   { color: #ddf849; font-weight: 600; }
 .num  { color: #dd23bb; }

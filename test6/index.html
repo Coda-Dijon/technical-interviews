@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="../styles.css">
-  <title>Coda — Test 5 : SQL</title>
+  <title>Coda — Test 6 : Débogage</title>
 </head>
 <body>
 
@@ -20,29 +20,26 @@
   </div>
   <div class="code"></div>
   <div class="question">
-    <iframe data-tally-src="https://tally.so/embed/MeV4WY?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="314" frameborder="0" marginheight="0" marginwidth="0" title="B1 - Test technique 5"></iframe>
+    <iframe data-tally-src="https://tally.so/embed/GxbGW2?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="416" frameborder="0" marginheight="0" marginwidth="0" title="B1 - Test technique 6"></iframe>
     <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
   </div>
 </div>
 
 <script>
 const SNIPPET = {
-  title: "query.sql",
-  lang: "sql",
+  title: "Search.java",
+  lang: "java",
   code: `\
--- | name  | salary | dept |
--- | Alice |   4500 | RH   |
--- | Bob   |   3200 | IT   |
--- | Carol |   5100 | IT   |
--- | Dave  |   2900 | RH   |
--- | Eve   |   4800 | IT   |
+static boolean contains(int[] arr, int target) {
+    for (int x : arr) {
+        if (x == target) return true;
+        return false;
+    }
+    return false;
+}
 
-SELECT name
-FROM employees
-WHERE salary > (
-    SELECT AVG(salary)
-    FROM employees
-);`
+int[] data = {3, 7, 1, 9, 4};
+System.out.println(contains(data, 7));`
 };
 </script>
 <script src="../render.js"></script>
