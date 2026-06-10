@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../styles.css">
+  <title>Coda — Test 5 : SQL</title>
+</head>
+<body>
+
+<a href="../" class="back-link">← Accueil</a>
+
+<div class="window">
+  <div class="titlebar">
+    <div class="dots">
+      <div class="dot red"></div>
+      <div class="dot yellow"></div>
+      <div class="dot green"></div>
+    </div>
+    <span class="title"></span>
+  </div>
+  <div class="code"></div>
+  <div class="question">
+    <!-- Remplacer par l'iframe Tally une fois le formulaire créé -->
+    <p><strong>Quelle valeur retourne cette requête ?</strong></p>
+  </div>
+</div>
+
+<script>
+const SNIPPET = {
+  title: "query.sql",
+  lang: "sql",
+  code: `\
+-- | name  | salary | dept |
+-- | Alice |   4500 | RH   |
+-- | Bob   |   3200 | IT   |
+-- | Carol |   5100 | IT   |
+-- | Dave  |   2900 | RH   |
+-- | Eve   |   4800 | IT   |
+
+SELECT COUNT(*)
+FROM employees
+WHERE dept = 'IT'
+  ~~AND~~ salary > 4000;`
+};
+</script>
+<script src="../render.js"></script>
+</body>
+</html>

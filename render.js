@@ -18,6 +18,13 @@
                 'break', 'continue', 'print', 'sum', 'len', 'range', 'append'],
             comment: '#',
         },
+        sql: {
+            keywords: ['SELECT', 'FROM', 'WHERE', 'AND', 'OR', 'NOT', 'IN', 'LIKE', 'BETWEEN',
+                'GROUP', 'BY', 'ORDER', 'HAVING', 'JOIN', 'INNER', 'LEFT', 'RIGHT', 'OUTER',
+                'ON', 'AS', 'COUNT', 'SUM', 'AVG', 'MAX', 'MIN', 'DISTINCT',
+                'INSERT', 'UPDATE', 'DELETE', 'INTO', 'VALUES', 'SET', 'NULL', 'IS', 'LIMIT'],
+            comment: '--',
+        },
     };
 
     function escape(s) {
